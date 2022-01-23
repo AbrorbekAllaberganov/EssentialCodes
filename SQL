@@ -35,6 +35,6 @@
     # satrni kichik harfga o'zgartirish
     SELECT Lower(surename) FROM talaba WHERE kurs=4
     # satrni katta harfga o'zgartirish
-    Satrni katta harfga o'zgartirib olish
+    SELECT Upper(surename) FROM talaba WHERE kurs=4
     
 
