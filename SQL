@@ -1,0 +1,7 @@
+#Sql
+
+1.Barcha Customerlarni olish
+    SELECT * FROM Customers;
+
+2.Shartlar orqali Talabalarni olish
+    SELECT Name,Surename FROM talaba WHERE kurs=3 and stipendiya>0;
