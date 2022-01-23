@@ -5,3 +5,36 @@
 
 2.Shartlar orqali Talabalarni olish
     SELECT Name,Surename FROM talaba WHERE kurs=3 and stipendiya>0;
+      
+3.Berilgan ro'yxat orqali solishtirish
+    SELECT * FROM exam WHERE mark in (4,5);
+ 
+ 4.Maydon qiymatini berilgan intervalda tekshirish
+    SELECT * FROM subject WHERE hour between 30 and 40;
+   
+5.Satrli matnlarni qism satrlar bilan taqqoslash
+    # A dan boshlanadigan
+    SELECT * FROM talaba WHERE surename LIKE 'A%';
+    # a bilan tugaydigan 
+    SELECT * FROM talaba WHERE surename LIKE '%a';
+    # a harfi o'rtada kelgan
+    SELECT * FROM talaba WHERE surename LIKE '%a%';
+    # ikkinchi harfi a bo'lgan
+    SELECT * FROM talaba WHERE surename LIKE '_a%';
+    # a bilan boshlanib e bilan tugaydigan
+    SELECT * FROM talaba WHERE surename LIKE 'a%e';
+    # or  so'zi qatnashganlari
+    SELECT * FROM talaba WHERE surename LIKE '%or%';
+    
+    
+ 
+6.Virtual ustun yaratish
+     SELECT name,(stipendiya*kurs)/2 FROM talaba WHERE stipendiya>0;
+ 
+7.Almashtirish funksiyalari
+    # satrni kichik harfga o'zgartirish
+    SELECT Lower(surename) FROM talaba WHERE kurs=4
+    # satrni katta harfga o'zgartirish
+    Satrni katta harfga o'zgartirib olish
+    
+
