@@ -47,6 +47,10 @@ CREATE DATABASE mobitech;
 CREATE USER mobitech WITH ENCRYPTED PASSWORD 'mobitech';
 GRANT ALL PRIVILEGES ON DATABASE mobitech TO mobitech;
 
+// postgres password change
+sudo -u postgres psql postgres
+\password postgres
+
 
 ////process management  ////pid
 lsof -i tcp:9000
