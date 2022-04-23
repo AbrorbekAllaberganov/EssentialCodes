@@ -33,6 +33,9 @@ cd /etc/postgresql/13/main
 
 ////change hba file
 
+// ubuntu file remove
+rm -rf dir1
+
 sudo service postgresql restart
 
 
