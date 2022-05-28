@@ -50,6 +50,9 @@ CREATE DATABASE mobitech;
 CREATE USER mobitech WITH ENCRYPTED PASSWORD 'mobitech';
 GRANT ALL PRIVILEGES ON DATABASE mobitech TO mobitech;
 
+// change database
+\c db_name
+
 // postgres password change
 sudo -u postgres psql postgres
 \password postgres
