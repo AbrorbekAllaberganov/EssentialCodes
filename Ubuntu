@@ -21,6 +21,8 @@ wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-
 
 # Update the package lists:
 sudo apt-get update
+# remove java
+sudo apt-get autoremove default-jdk openjdk- [ click tab ]
 
 # Install the latest version of PostgreSQL.
 # If you want a specific version, use 'postgresql-12' or similar instead of 'postgresql':
