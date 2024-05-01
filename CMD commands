@@ -1,0 +1,12 @@
+## Creating new folder
+mkdir <file_name>
+
+## Creating new file
+echo <file_name>
+
+## rename the file
+ren oldfilename.txt newfilename.txt
+
+## write the file
+echo Your text here >> filename.txt
+
