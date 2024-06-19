@@ -1,0 +1,13 @@
+# 1 Deleting idea files from the branch
+
+# Step 1: Make sure .idea is in .gitignore
+echo '.idea/' >> .gitignore
+
+# Step 2: Remove .idea from Git tracking
+git rm -r --cached .idea
+
+# Step 3: Commit the changes
+git commit -m "Remove .idea directory from tracking"
+
+# Step 4: Push the changes
+git push origin MCHS-60
