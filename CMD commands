@@ -10,3 +10,7 @@ ren oldfilename.txt newfilename.txt
 ## write the file
 echo Your text here >> filename.txt
 
+## check the port 
+netstat -ano | findstr :5432
+
+
