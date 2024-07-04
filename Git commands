@@ -11,3 +11,11 @@ git commit -m "Remove .idea directory from tracking"
 
 # Step 4: Push the changes
 git push origin MCHS-60
+
+# 2 Force Push with Squash and Merge (Not Recommended):
+
+git reset --soft HEAD~<number-of-commits>
+
+git commit -m "Final changes"
+
+git push origin BRANCH_NAME --force
