@@ -19,3 +19,6 @@ git reset --soft HEAD~<number-of-commits>
 git commit -m "Final changes"
 
 git push origin BRANCH_NAME --force
+
+# 3 Delete the file from the file list
+git reset HEAD -- <FILE_PATH>
